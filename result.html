@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LearnQuest - Result</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        🧠 LearnQuest
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="home-container">
+
+
+    <section class="result-card">
+
+
+        <div class="result-emoji">
+            🎉
+        </div>
+
+
+        <h1>
+            Quest Complete!
+        </h1>
+
+
+        <p>
+            Great job! Here's how you performed.
+        </p>
+
+
+
+        <div class="result-stats">
+
+
+            <div class="result-stat">
+
+                ✓ Correct
+
+                <strong
+                    id="resultCorrect">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="result-stat">
+
+                ❌ Wrong
+
+                <strong
+                    id="resultWrong">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="result-stat">
+
+                ⭐ XP
+
+                <strong
+                    id="resultXP">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="dashboard-card">
+
+            <h3>
+                🎯 Accuracy
+            </h3>
+
+
+            <strong
+                id="resultAccuracy"
+                style="font-size:35px;">
+
+                0%
+
+            </strong>
+
+        </div>
+
+
+
+        <div class="dashboard-card">
+
+            <h3>
+                🧠 Areas to Improve
+            </h3>
+
+
+            <div
+                id="resultWeakTopics">
+
+            </div>
+
+        </div>
+
+
+
+        <button
+            class="primary-button"
+            onclick="goToDashboard()">
+
+            📊 View My Dashboard
+
+        </button>
+
+
+        <br>
+        <br>
+
+
+        <button
+            class="primary-button"
+            onclick="goHome()">
+
+            🏠 Learn Another Topic
+
+        </button>
+
+
+    </section>
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+function goToDashboard() {
+
+    window.location.href =
+        "dashboard.html";
+
+}
+
+
+function goHome() {
+
+    window.location.href =
+        "index.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

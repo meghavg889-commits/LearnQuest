@@ -1,0 +1,1059 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        #f4f6ff;
+
+    color:
+        #202124;
+
+    min-height:
+        100vh;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    height: 70px;
+
+    background:
+        white;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        0 7%;
+
+    box-shadow:
+        0 2px 12px rgba(0,0,0,0.08);
+
+    position:
+        sticky;
+
+    top:
+        0;
+
+    z-index:
+        100;
+
+}
+
+
+.logo {
+
+    font-size:
+        23px;
+
+    font-weight:
+        800;
+
+}
+
+
+.navbar nav {
+
+    display:
+        flex;
+
+    gap:
+        28px;
+
+}
+
+
+.navbar a {
+
+    text-decoration:
+        none;
+
+    color:
+        #555;
+
+    font-weight:
+        600;
+
+}
+
+
+.navbar a:hover {
+
+    color:
+        #5b5bea;
+
+}
+
+
+.nav-streak {
+
+    font-weight:
+        700;
+
+}
+
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.home-container {
+
+    max-width:
+        1000px;
+
+    margin:
+        auto;
+
+    padding:
+        60px 20px;
+
+}
+
+
+.hero {
+
+    text-align:
+        center;
+
+}
+
+
+.hero-badge {
+
+    display:
+        inline-block;
+
+    padding:
+        8px 15px;
+
+    border-radius:
+        30px;
+
+    background:
+        #e8e8ff;
+
+    color:
+        #4b4bd4;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        50px;
+
+    line-height:
+        1.15;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.hero h1 span {
+
+    color:
+        #5b5bea;
+
+}
+
+
+.hero > p:last-child {
+
+    max-width:
+        680px;
+
+    margin:
+        auto;
+
+    font-size:
+        18px;
+
+    line-height:
+        1.6;
+
+    color:
+        #666;
+
+}
+
+
+
+/* =========================
+   TOPIC CARD
+========================= */
+
+.topic-card {
+
+    max-width:
+        700px;
+
+    margin:
+        50px auto;
+
+    background:
+        white;
+
+    padding:
+        40px;
+
+    border-radius:
+        24px;
+
+    text-align:
+        center;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.08);
+
+}
+
+
+.card-icon {
+
+    font-size:
+        45px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.topic-card h2 {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.topic-card > p {
+
+    color:
+        #666;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.topic-card input {
+
+    width:
+        100%;
+
+    padding:
+        16px;
+
+    border:
+        2px solid #e4e4e4;
+
+    border-radius:
+        12px;
+
+    font-size:
+        16px;
+
+    outline:
+        none;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.topic-card input:focus {
+
+    border-color:
+        #5b5bea;
+
+}
+
+
+.primary-button,
+.topic-card button {
+
+    width:
+        100%;
+
+    padding:
+        16px;
+
+    border:
+        none;
+
+    border-radius:
+        12px;
+
+    background:
+        #5b5bea;
+
+    color:
+        white;
+
+    font-size:
+        17px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+}
+
+
+.primary-button:hover,
+.topic-card button:hover {
+
+    opacity:
+        0.9;
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+.message {
+
+    margin-top:
+        15px;
+
+}
+
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        20px;
+
+    margin:
+        30px 0;
+
+}
+
+
+.stat-card {
+
+    background:
+        white;
+
+    padding:
+        25px;
+
+    border-radius:
+        18px;
+
+    text-align:
+        center;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+
+}
+
+
+.stat-icon {
+
+    font-size:
+        32px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.stat-card h3 {
+
+    margin-bottom:
+        8px;
+
+}
+
+
+.stat-card strong {
+
+    font-size:
+        28px;
+
+}
+
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features-section {
+
+    margin-top:
+        60px;
+
+}
+
+
+.features-section > h2 {
+
+    text-align:
+        center;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.feature-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        20px;
+
+}
+
+
+.feature-card {
+
+    background:
+        white;
+
+    padding:
+        28px;
+
+    border-radius:
+        18px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.05);
+
+}
+
+
+.feature-icon {
+
+    font-size:
+        35px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.feature-card h3 {
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.feature-card p {
+
+    color:
+        #666;
+
+    line-height:
+        1.5;
+
+}
+
+
+
+/* =========================
+   GAME
+========================= */
+
+.progress-container {
+
+    max-width:
+        800px;
+
+    margin:
+        20px auto;
+
+}
+
+
+.progress-bar {
+
+    width:
+        100%;
+
+    height:
+        10px;
+
+    background:
+        #ddd;
+
+    border-radius:
+        20px;
+
+    overflow:
+        hidden;
+
+}
+
+
+.progress-fill {
+
+    height:
+        100%;
+
+    background:
+        #5b5bea;
+
+    width:
+        0%;
+
+    transition:
+        width 0.3s ease;
+
+}
+
+
+.game-card {
+
+    max-width:
+        800px;
+
+    margin:
+        30px auto;
+
+    background:
+        white;
+
+    padding:
+        40px;
+
+    border-radius:
+        24px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.08);
+
+}
+
+
+.game-header {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.question-number {
+
+    color:
+        #5b5bea;
+
+    font-weight:
+        700;
+
+}
+
+
+.xp-display {
+
+    font-weight:
+        700;
+
+}
+
+
+.question {
+
+    font-size:
+        25px;
+
+    line-height:
+        1.4;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.options {
+
+    display:
+        grid;
+
+    gap:
+        14px;
+
+}
+
+
+.option {
+
+    padding:
+        17px;
+
+    border:
+        2px solid #e5e5e5;
+
+    border-radius:
+        12px;
+
+    background:
+        white;
+
+    cursor:
+        pointer;
+
+    text-align:
+        left;
+
+    font-size:
+        16px;
+
+}
+
+
+.option:hover {
+
+    border-color:
+        #5b5bea;
+
+    background:
+        #f6f6ff;
+
+}
+
+
+.option.selected {
+
+    border-color:
+        #5b5bea;
+
+    background:
+        #eeeeff;
+
+}
+
+
+.option.correct {
+
+    border-color:
+        #35a853;
+
+    background:
+        #e8f5e9;
+
+}
+
+
+.option.wrong {
+
+    border-color:
+        #ea4335;
+
+    background:
+        #ffebee;
+
+}
+
+
+.feedback {
+
+    margin-top:
+        25px;
+
+    padding:
+        20px;
+
+    border-radius:
+        15px;
+
+    display:
+        none;
+
+}
+
+
+.feedback.show {
+
+    display:
+        block;
+
+}
+
+
+.feedback.correct {
+
+    background:
+        #e8f5e9;
+
+}
+
+
+.feedback.wrong {
+
+    background:
+        #ffebee;
+
+}
+
+
+.next-button {
+
+    margin-top:
+        20px;
+
+    width:
+        100%;
+
+    padding:
+        15px;
+
+    border:
+        none;
+
+    border-radius:
+        12px;
+
+    background:
+        #5b5bea;
+
+    color:
+        white;
+
+    font-size:
+        16px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+}
+
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result-card {
+
+    max-width:
+        700px;
+
+    margin:
+        50px auto;
+
+    background:
+        white;
+
+    padding:
+        45px;
+
+    border-radius:
+        25px;
+
+    text-align:
+        center;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.08);
+
+}
+
+
+.result-emoji {
+
+    font-size:
+        70px;
+
+}
+
+
+.result-card h1 {
+
+    margin:
+        15px 0;
+
+}
+
+
+.result-stats {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        15px;
+
+    margin:
+        30px 0;
+
+}
+
+
+.result-stat {
+
+    background:
+        #f5f6ff;
+
+    padding:
+        20px;
+
+    border-radius:
+        15px;
+
+}
+
+
+.result-stat strong {
+
+    display:
+        block;
+
+    font-size:
+        26px;
+
+    margin-top:
+        8px;
+
+}
+
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-header {
+
+    text-align:
+        center;
+
+    margin-bottom:
+        40px;
+
+}
+
+
+.dashboard-header h1 {
+
+    font-size:
+        40px;
+
+}
+
+
+.dashboard-card {
+
+    background:
+        white;
+
+    padding:
+        30px;
+
+    border-radius:
+        20px;
+
+    margin-bottom:
+        20px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.06);
+
+}
+
+
+.level-bar {
+
+    height:
+        14px;
+
+    background:
+        #ddd;
+
+    border-radius:
+        20px;
+
+    overflow:
+        hidden;
+
+    margin-top:
+        15px;
+
+}
+
+
+.level-progress {
+
+    height:
+        100%;
+
+    width:
+        0%;
+
+    background:
+        #5b5bea;
+
+}
+
+
+.weak-topic {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    padding:
+        15px 0;
+
+    border-bottom:
+        1px solid #eee;
+
+}
+
+
+.weak-topic:last-child {
+
+    border-bottom:
+        none;
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        padding:
+            0 5%;
+
+    }
+
+
+    .navbar nav {
+
+        display:
+            none;
+
+    }
+
+
+    .hero h1 {
+
+        font-size:
+            36px;
+
+    }
+
+
+    .stats-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .feature-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .game-card {
+
+        padding:
+            25px;
+
+    }
+
+
+    .question {
+
+        font-size:
+            21px;
+
+    }
+
+
+    .result-stats {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}

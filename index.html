@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LearnQuest</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        🧠 LearnQuest
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <div class="nav-streak">
+        🔥 <span id="navStreak">0</span>
+    </div>
+
+</header>
+
+
+
+<main class="home-container">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-badge">
+            🤖 AI Powered Learning
+        </div>
+
+        <h1>
+            Learn anything.
+            <br>
+            <span>Turn it into a game.</span>
+        </h1>
+
+        <p>
+            Enter any topic and transform it into
+            missions, quizzes, challenges and
+            learning adventures.
+        </p>
+
+    </section>
+
+
+
+    <!-- TOPIC INPUT -->
+
+    <section class="topic-card">
+
+        <div class="card-icon">
+            🎯
+        </div>
+
+        <h2>
+            What do you want to learn?
+        </h2>
+
+        <p>
+            Enter a topic and start your quest.
+        </p>
+
+
+        <input
+            type="text"
+            id="topicInput"
+            placeholder="Example: Ohm's Law"
+        >
+
+
+        <button
+            class="primary-button"
+            onclick="startQuest()">
+
+            🚀 Create My Quest
+
+        </button>
+
+
+        <p
+            id="homeMessage"
+            class="message">
+        </p>
+
+    </section>
+
+
+
+    <!-- STATS -->
+
+    <section class="stats-grid">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⭐
+            </div>
+
+            <h3>XP</h3>
+
+            <strong id="homeXP">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🏆
+            </div>
+
+            <h3>Level</h3>
+
+            <strong id="homeLevel">
+                1
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔥
+            </div>
+
+            <h3>Streak</h3>
+
+            <strong id="homeStreak">
+                0
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="features-section">
+
+        <h2>
+            🎮 Your Learning Adventure
+        </h2>
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🎯
+                </div>
+
+                <h3>
+                    Missions
+                </h3>
+
+                <p>
+                    Turn chapters into exciting
+                    learning missions.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🧩
+                </div>
+
+                <h3>
+                    Puzzles
+                </h3>
+
+                <p>
+                    Solve challenges and unlock
+                    new levels.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🧠
+                </div>
+
+                <h3>
+                    Smart Feedback
+                </h3>
+
+                <p>
+                    Understand your mistakes and
+                    discover weak topics.
+                </p>
+
+            </div>
+
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    Earn Rewards
+                </h3>
+
+                <p>
+                    Collect XP, stars and achievements.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

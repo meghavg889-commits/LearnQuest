@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>LearnQuest - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        🧠 LearnQuest
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+    </nav>
+
+
+    <div class="nav-streak">
+
+        🔥 <span id="dashboardNavStreak">
+            0
+        </span>
+
+    </div>
+
+</header>
+
+
+
+<main class="home-container">
+
+
+    <section class="dashboard-header">
+
+        <p class="welcome-text">
+            YOUR LEARNING JOURNEY
+        </p>
+
+
+        <h1>
+            📊 Progress Dashboard
+        </h1>
+
+    </section>
+
+
+
+    <!-- MAIN STATS -->
+
+    <section class="stats-grid">
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ⭐
+            </div>
+
+            <h3>
+                Total XP
+            </h3>
+
+            <strong id="dashboardXP">
+                0
+            </strong>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🏆
+            </div>
+
+            <h3>
+                Level
+            </h3>
+
+            <strong id="dashboardLevel">
+                1
+            </strong>
+
+        </div>
+
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                🔥
+            </div>
+
+            <h3>
+                Streak
+            </h3>
+
+            <strong>
+
+                <span id="dashboardStreak">
+                    0
+                </span>
+
+                days
+
+            </strong>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- STARS -->
+
+    <section class="dashboard-card">
+
+        <h2>
+            ⭐ Stars
+        </h2>
+
+
+        <p style="margin-top:10px;">
+
+            You have earned
+
+            <strong id="dashboardStars">
+                0
+            </strong>
+
+            stars.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- LEVEL -->
+
+    <section class="dashboard-card">
+
+        <h2>
+            🏆 Current Level
+        </h2>
+
+
+        <p style="margin-top:10px;">
+
+            Keep earning XP to unlock
+            the next level!
+
+        </p>
+
+
+        <div class="level-bar">
+
+            <div
+                class="level-progress"
+                id="levelProgress">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WEAK TOPICS -->
+
+    <section class="dashboard-card">
+
+        <h2>
+            🧠 Topics to Improve
+        </h2>
+
+
+        <p style="margin:10px 0 20px; color:#666;">
+
+            LearnQuest tracks the concepts
+            where you make repeated mistakes.
+
+        </p>
+
+
+        <div id="weakTopics">
+
+            Loading...
+
+        </div>
+
+    </section>
+
+
+
+    <section class="topic-card">
+
+        <h2>
+            🚀 Continue Learning
+        </h2>
+
+
+        <p>
+            Start another learning quest.
+        </p>
+
+
+        <button
+            class="primary-button"
+            onclick="goHome()">
+
+            🎯 Start New Quest
+
+        </button>
+
+    </section>
+
+
+</main>
+
+
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+
+<script>
+
+function goHome() {
+
+    window.location.href =
+        "index.html";
+
+}
+
+</script>
+
+
+</body>
+
+</html>
